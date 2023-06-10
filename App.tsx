@@ -2,6 +2,7 @@
 import {StatusBar} from 'react-native';
 import {NativeBaseProvider} from 'native-base';
 import {THEME} from './src/theme';
+import { Routes } from '@routes/index';
 
 export default function App() {
   const config = {
@@ -16,6 +17,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
+      <Routes/>
     </NativeBaseProvider>
   );
 }
